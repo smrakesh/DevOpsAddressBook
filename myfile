@@ -7,7 +7,7 @@ pipeline {
     stages {
     stage('Checkout'){
     steps {
-      git 'https://github.com/cbabu85/DevOpsAddressBook.git'
+      git 'https://github.com/smrakesh/DevOpsAddressBook.git'
       }
       }
     stage('package'){
