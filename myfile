@@ -17,7 +17,7 @@ pipeline {
       }
      stage('Deployment'){
     steps {
-      sh 'cp target/addressbook.war /opt/tomcat/webapps/'
+      deploy adapters: [tomcat9(credentialsId: 'tomcat9', path: '', url: 'http://http://3.20.235.137:8085/')], contextPath: null, war: '**/*.war'
       }
       }
       }
